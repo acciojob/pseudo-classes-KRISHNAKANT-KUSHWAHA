@@ -1,24 +1,41 @@
-/*  your css code here. If applicable */
-*{
-	background-color:rgb(135, 206, 235);
-}
-.p1{
-	background-color:black;
-	color:white;
-}
-.p3{
-	color:red;
+/* your css code here */
+
+:root {
+    background-color: rgb(135, 206, 235);
 }
 
-.ul1{
-	background-color:gray;
-	width:50%;
-	padding:10px;
+/* Paragraph styling */
+
+article p:first-child {
+    background-color: black;
+    color: white;
 }
-#odd{
-  background-color:white;	 
-	font-size:22px;
- }
-#third{
-	background-color:pink;
+
+article p:nth-child(2) {
+    color: black;
+}
+
+article p:last-child {
+    color: red;
+}
+
+/* List styling */
+
+ul li {
+    background-color: gray;
+    width: 50%;
+    padding: 10px;
+}
+
+ul li:nth-child(odd) {
+    background-color: white;
+}
+
+ul li:first-child,
+ul li:last-child {
+    font-size: 22px;
+}
+
+ul li:nth-last-child(3) {
+    background-color: pink;
 }
